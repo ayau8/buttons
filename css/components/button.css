@@ -1,0 +1,71 @@
+/* Your button CSS file */
+.btn-medium {
+  color: lightgray;
+  background-color: white;
+  border-radius: 50px;
+  border: 2px solid lightgray;
+  padding: 10px;
+  transition: background 0.5s ease;
+}
+
+.btn-medium:hover {
+  background-color: rgb(195, 212, 98);
+  color: white;
+  font-size: 1.3em;
+}
+
+.btn-treehouse {
+  color: white;
+  background-color: darkslategray;
+  border-radius: 5px;
+  border: 1px solid darkslategray;
+  padding: 10px;
+  transition: background 0.5s ease;
+}
+
+.btn-treehouse:hover {
+  background-color: white;
+  color: black;
+  font-size: 1.3em;
+}
+
+.btn-yours {
+  background: darkslategray;
+  color:#fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 1.1em;
+  cursor: pointer;
+  transition: 0.6s ease all;
+  outline:none;
+  border-radius: 10px;
+}
+
+.btn-yours:hover{
+  background:#fff;
+  color:#39665b;
+}
+
+.btn-yours:before,.btn-yours:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: darkslategrey;
+  transition: 400ms ease all;
+}
+
+.btn-yours:after{
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.btn-yours:hover:before,.btn-yours:hover:after{
+  width: 100%;
+  transition: 800ms ease all;
+}
